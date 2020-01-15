@@ -82,7 +82,7 @@ class AvailtecParser {
                         return new ArrivalType({
                             route: routes[rd.RouteId],
                             direction: rd.Direction,
-                            arrival: d.EDT || d.ETA
+                            arrival: d.EDT
                         });
                     });
                 });

@@ -45,7 +45,7 @@ class AgencyList extends Component {
                         <span
                             key={route.id}
                             className="AgencyList-route-name" title={route.number + " " + route.name}>
-                          {agency.hideRouteNumber ? route.name : route.number + " " + route.name}
+                            {route.number + " " + route.name}
                         </span>
                         <button className={is_checked + " w3-button"}
                                 onClick={() => this.props.onRouteClick(agency, route) }
@@ -95,7 +95,7 @@ class AgencyList extends Component {
                 {/* Top menu on small screens */}
                 <header className="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
                     <span className="AgencyList-bar-item">
-                        Birmingham Transit
+                        Go Athens
                     </span>
                     <span className="w3-button w3-right" onClick={() => this.onOpen()}>
                         <i className="fa fa-bars"></i>
